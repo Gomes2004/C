@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aula_01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Declarar Variáveis
+            int metros = 0;
+            int resultadoCentimetros = 0;
+            int resultadoMilimetros = 0;
+
+            //Transformar Metros --> Centímetros
+            Console.WriteLine("Digite o valor em metros: ");
+            metros = Convert.ToInt16(Console.ReadLine());
+            resultadoCentimetros = metros * 100;
+            Console.WriteLine(String.Format("Convertendo o valor de {0} metros em centímetros teremos: {1}cm", metros, resultadoCentimetros));
+            Console.ReadKey();
+
+            //Transformar Metros --> Milimetros
+            Console.WriteLine("Digite o valor em metros: ");
+            metros = Convert.ToInt16(Console.ReadLine());
+            resultadoMilimetros = metros * 1000;
+            Console.WriteLine(String.Format("Convertendo o valor de {0} metros em milímetros teremos: {1}mm", metros, resultadoMilimetros));
+            Console.ReadKey();
+
+
+
+        }
+    }
+}
